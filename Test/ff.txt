@@ -1,0 +1,9 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9kdWN0X2NvZGUiOiJ6ZWU1QDk3NSIsInBsYXRmb3JtX2NvZGUiOiJXZWJAJCF0Mzg3MTIiLCJpc3N1ZWRBdCI6IjIwMjItMTEtMzBUMDE6MDE6NDEuNTk4WiIsInR0bCI6ODY0MDAwMDAsImlhdCI6MTY2OTc3MDEwMX0.E1Im0a_jgTrxGe2JizO4jmvZJYdwNJsg9DaRKcNOfyw
+2.52.19
+4322
+
+const jwt_decode = require("jwt-decode");
+
+const payLoadData =
+      authToken != "" ? JSON.parse(JSON.stringify(jwt_decode(authToken))) : "";
+    console.log("payload: " + payLoadData.user_id);
